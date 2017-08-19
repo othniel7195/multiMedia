@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703E734527D0436BE3B970B4 /* Pods_multiMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2AF6E694FD8C3C9F23DAB7 /* Pods_multiMedia.framework */; };
 		D566DAEB1F4842260074DD0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D566DAEA1F4842260074DD0E /* main.m */; };
 		D566DAEE1F4842260074DD0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D566DAED1F4842260074DD0E /* AppDelegate.m */; };
 		D566DAF11F4842260074DD0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D566DAF01F4842260074DD0E /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2AF6E694FD8C3C9F23DAB7 /* Pods_multiMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_multiMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D566DAE61F4842260074DD0E /* multiMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D566DAEA1F4842260074DD0E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D566DAEC1F4842260074DD0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		D566DAF51F4842260074DD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D566DAF81F4842260074DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D566DAFA1F4842260074DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78D9731F299445649BA2A69 /* Pods-multiMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multiMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-multiMedia/Pods-multiMedia.debug.xcconfig"; sourceTree = "<group>"; };
+		F3661E5B52E6F064AAD985F8 /* Pods-multiMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multiMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-multiMedia/Pods-multiMedia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703E734527D0436BE3B970B4 /* Pods_multiMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84C66E195D9D67FC2AEBE4EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E78D9731F299445649BA2A69 /* Pods-multiMedia.debug.xcconfig */,
+				F3661E5B52E6F064AAD985F8 /* Pods-multiMedia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5EA262A4DE1EA3846FDCC3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F2AF6E694FD8C3C9F23DAB7 /* Pods_multiMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D566DADD1F4842260074DD0E = {
 			isa = PBXGroup;
 			children = (
 				D566DAE81F4842260074DD0E /* multiMedia */,
 				D566DAE71F4842260074DD0E /* Products */,
+				84C66E195D9D67FC2AEBE4EB /* Pods */,
+				B5EA262A4DE1EA3846FDCC3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D566DAFD1F4842260074DD0E /* Build configuration list for PBXNativeTarget "multiMedia" */;
 			buildPhases = (
+				3F6D83E26B3C410748876F23 /* [CP] Check Pods Manifest.lock */,
 				D566DAE21F4842260074DD0E /* Sources */,
 				D566DAE31F4842260074DD0E /* Frameworks */,
 				D566DAE41F4842260074DD0E /* Resources */,
+				6913E680EE8D90EE3AB5480B /* [CP] Embed Pods Frameworks */,
+				1338FD0E51BC20422C93E983 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1338FD0E51BC20422C93E983 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-multiMedia/Pods-multiMedia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F6D83E26B3C410748876F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6913E680EE8D90EE3AB5480B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-multiMedia/Pods-multiMedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D566DAE21F4842260074DD0E /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		D566DAFE1F4842260074DD0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78D9731F299445649BA2A69 /* Pods-multiMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = multiMedia/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		D566DAFF1F4842260074DD0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3661E5B52E6F064AAD985F8 /* Pods-multiMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = multiMedia/Info.plist;

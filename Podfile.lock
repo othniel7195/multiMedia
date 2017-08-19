@@ -1,0 +1,12 @@
+PODS:
+  - RuntimeHelpers (0.0.4)
+
+DEPENDENCIES:
+  - RuntimeHelpers (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  RuntimeHelpers: 856ae359f0fa5d41996e144b16b65801911eb672
+
+PODFILE CHECKSUM: dc8a9d221d3f4a73c5e7b6ccee159540402e4739
+
+COCOAPODS: 1.2.0
