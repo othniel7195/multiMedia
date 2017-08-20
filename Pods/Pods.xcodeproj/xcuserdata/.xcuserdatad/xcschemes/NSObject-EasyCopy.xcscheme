@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '8DB3E0FFF060200B75B67F03EE94E8EC'
-               BlueprintName = 'RuntimeHelpers'
+               BlueprintIdentifier = 'D89BEF5C91A1D8D3C9F7FD829568CD2A'
+               BlueprintName = 'NSObject-EasyCopy'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RuntimeHelpers.framework'>
+               BuildableName = 'NSObject-EasyCopy.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

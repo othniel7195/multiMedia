@@ -1,0 +1,6 @@
+framework module NSObject_EasyCopy {
+  umbrella header "NSObject-EasyCopy-umbrella.h"
+
+  export *
+  module * { export * }
+}

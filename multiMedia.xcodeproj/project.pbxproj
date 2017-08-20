@@ -14,6 +14,7 @@
 		D566DAF41F4842260074DD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D566DAF21F4842260074DD0E /* Main.storyboard */; };
 		D566DAF61F4842260074DD0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D566DAF51F4842260074DD0E /* Assets.xcassets */; };
 		D566DAF91F4842260074DD0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D566DAF71F4842260074DD0E /* LaunchScreen.storyboard */; };
+		D566DB091F48B6D70074DD0E /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D566DB081F48B6D70074DD0E /* BaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		D566DAF51F4842260074DD0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D566DAF81F4842260074DD0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D566DAFA1F4842260074DD0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D566DB071F48B6D70074DD0E /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		D566DB081F48B6D70074DD0E /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		E78D9731F299445649BA2A69 /* Pods-multiMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multiMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-multiMedia/Pods-multiMedia.debug.xcconfig"; sourceTree = "<group>"; };
 		F3661E5B52E6F064AAD985F8 /* Pods-multiMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-multiMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-multiMedia/Pods-multiMedia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,7 @@
 		D566DAE81F4842260074DD0E /* multiMedia */ = {
 			isa = PBXGroup;
 			children = (
+				D566DB061F48B6860074DD0E /* Model */,
 				D566DAEC1F4842260074DD0E /* AppDelegate.h */,
 				D566DAED1F4842260074DD0E /* AppDelegate.m */,
 				D566DAEF1F4842260074DD0E /* ViewController.h */,
@@ -101,6 +105,15 @@
 				D566DAEA1F4842260074DD0E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D566DB061F48B6860074DD0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D566DB071F48B6D70074DD0E /* BaseModel.h */,
+				D566DB081F48B6D70074DD0E /* BaseModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +240,7 @@
 			files = (
 				D566DAF11F4842260074DD0E /* ViewController.m in Sources */,
 				D566DAEE1F4842260074DD0E /* AppDelegate.m in Sources */,
+				D566DB091F48B6D70074DD0E /* BaseModel.m in Sources */,
 				D566DAEB1F4842260074DD0E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,6 +400,7 @@
 				D566DAFF1F4842260074DD0E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

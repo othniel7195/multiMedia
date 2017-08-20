@@ -1,12 +1,18 @@
 PODS:
+  - CSModel (0.1.0)
+  - NSObject-EasyCopy (0.1.1)
   - RuntimeHelpers (0.0.4)
 
 DEPENDENCIES:
-  - RuntimeHelpers (~> 0.0.1)
+  - CSModel
+  - NSObject-EasyCopy
+  - RuntimeHelpers
 
 SPEC CHECKSUMS:
+  CSModel: 19e0422304bf6d6b63badc52d0e6d09bc8a315cb
+  NSObject-EasyCopy: 61e1eb8f29b01b123af904b23531cd673ec6f9e2
   RuntimeHelpers: 856ae359f0fa5d41996e144b16b65801911eb672
 
-PODFILE CHECKSUM: dc8a9d221d3f4a73c5e7b6ccee159540402e4739
+PODFILE CHECKSUM: 90e1b35a0dd648de8e0b7de494419cac1c0dce50
 
 COCOAPODS: 1.2.0

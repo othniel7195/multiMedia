@@ -1,0 +1,6 @@
+framework module CSModel {
+  umbrella header "CSModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

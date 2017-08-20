@@ -89,9 +89,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/CSModel/CSModel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/NSObject-EasyCopy/NSObject_EasyCopy.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RuntimeHelpers/RuntimeHelpers.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/CSModel/CSModel.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/NSObject-EasyCopy/NSObject_EasyCopy.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RuntimeHelpers/RuntimeHelpers.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
